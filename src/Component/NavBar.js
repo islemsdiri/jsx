@@ -8,7 +8,7 @@ import AddForm from "./addMovie";
 const RenderNav = () => {
   return (
     <Navbar bg="light" expand="lg">
-      <Link to="/Home">
+      <Link to="/">
       <Navbar.Brand>Home</Navbar.Brand>
       </Link>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -5,6 +5,8 @@ import AddForm from "./Component/addMovie";
 import React ,{useState} from 'react'
 import { Route } from 'react-router';
 import RenderCard from "./Component/renderCard";
+import { DetailsCard } from "./Component/detailsCard";
+
 
 // import 'semantic-ui-css/semantic.min.css'
 
@@ -18,8 +20,14 @@ function App() {
   return (
     //Nav
   <div className="App">
-<RenderNav />
-<MovieCard />
+{/* <RenderNav />
+<MovieCard /> */}
+
+<RenderNav/>
+
+<Route exact path="/" component={RenderCard}/>
+    <Route exact path="/addform" component={AddForm}/>
+     <Route exact path="/details" component={DetailsCard}/>
 </div> 
   );
 }
